@@ -27,8 +27,13 @@ Idempotentti komento siis tarkoittaa komentoa jonka voi ajaa usean kerran, mutta
 
 ## Lähteet
 Tehtäväsivu: https://terokarvinen.com/2023/configuration-management-2023-autumn/
+
 Kuinka asentaa debian: https://terokarvinen.com/2021/install-debian-on-virtualbox/
+
 Debian versiot: https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/
+
 Salt komennot: https://terokarvinen.com/2021/salt-run-command-locally/
+
 Apua pakettien lataamiseen ja poistamiseen: https://www.debian.org/doc/manuals/debian-faq/pkgtools.en.html
+
 
