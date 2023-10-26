@@ -18,6 +18,14 @@ Ja vielä kerran sama komennolla cmd.run. Kone ajaa komennon, vain jos muutoksie
 c) 
 Idempotentti komento siis tarkoittaa komentoa jonka voi ajaa usean kerran, mutta joka tapahtuu vain yhden kerran. Esimerkkinä uuden käyttäjän luominen. Ensimmäisellä kerralla kone luo käyttäjän, mutta toisella kerralla kone näkee että käyttäjä on jo olemassa, ja täten jättää uuden käyttäjän tekemättä. Tulee ilmoitus että käyttäjä on jo olemassa. 
 
+d)
+'sudo salt-call --local grains.item osfinger virtual' komennon jälkeen sain poimituksi vain seuraavat tiedot: "osfinger:Debian-12" ja "virtual: VirtualBox".
+kolme poimintaa saltin grains.items tekniikalla:
+
+biosrelesedate: 12/01/2006
+oscodename: bookworm
+cpu_model: Intel(R) Core(TM) i5-8279U CPU @ 2.40GHz
+
 
 
 
