@@ -71,6 +71,47 @@ Otetaan yhteys 'vagrant ssh tmaster' ja toimitaan aikaisempien ohjeiden mukaises
 Kokeillaan vielä yhteys komennolla '$ sudo salt '*' test.ping'
 ![Näyttökuva 2023-11-1 kello 18 11 59](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/2d88eaa2-a439-46c1-9fb0-4bb2b98a80d7)
 
+***
+
+e)
+
+Otetaan yhteys Tmaster koneeseen komennolla 'vagrant ssh Tmaster'. Sitten ajetaan esimerkiksi komento '$ sudo salt '*' state.single file.managed '/tmp/see-you-at-terokarvinen-com' Jolla luodaan uusi tiedosto nimeltään "see-you-at-terokaevinen-com" hakemistoon /tmp.
+
+<img width="582" alt="Näyttökuva 2023-11-2 kello 14 27 36" src="https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/6a24ad49-f0ae-428b-9e98-e603d522ab13">
+Tmasterista katsottuna komento näyttää toimivan. Siirrytään vielä koneelle t001 ja tarkistetaan sieltä ilmestyikö tiedosto. 
+
+<img width="582" alt="Näyttökuva 2023-11-2 kello 14 28 45" src="https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/45e0fc1f-0f00-44b0-bdd5-d2f50557c707">
+
+Tiedosto on paikallaan. Ja vaikka tiedoston luomiskomennon olisi ajanut moneen kertaan, olisi paikalla vain yksi tiedosto koska komento on idempotentti.
+
+Ajetaan vielä muutamat muut komennot. Ensiksi 'sudo salt '*' state.single pkg.installed apache2' ja sitten 'sudo salt '*' state.single service.running apache2'. Näillä asennetaan apache2 ja katsotaan että se on toiminnassa. 
+
+<img width="582" alt="Näyttökuva 2023-11-2 kello 14 38 56" src="https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/1201b9d2-865a-49eb-b8c6-58784f18cfe3">
+
+Tämä näyttäisi toimivan molemmissa tietokoneissa.
+
+***
+
+f)
+Haetaan edellisviikon tehtävän 'grains.item osfinger virtual' komennolla tietoa.
+
+<img width="582" alt="Näyttökuva 2023-11-2 kello 14 46 52" src="https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/d16374b7-64db-4828-b339-1649a34d86ed">
+
+Kokeillaan vielä toista komentoa, haetaan oscodename.
+
+<img width="582" alt="Näyttökuva 2023-11-2 kello 14 51 13" src="https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/dbede55c-5e6e-43d3-87ca-bfde23304464">
+
+***
+
+g) 
+Ajetaan shell-komento orjalla verkon yli kuten [tämän](https://terokarvinen.com/2023/salt-vagrant/) ohjeen alussa näytettiin. 
+
+<img width="582" alt="Näyttökuva 2023-11-2 kello 15 03 19" src="https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/78675ffb-31d7-46bb-bd4b-3d8b021dcc83">
+
+***
+
+h)
+???
 
 ## LÄHTEET
 Download Vagrant: https://developer.hashicorp.com/vagrant/downloads
@@ -80,3 +121,9 @@ Install Vagrant tutorial: https://developer.hashicorp.com/vagrant/tutorials/gett
 Github, Basic writing an formatting syntax: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
 Vagrant Tutorial | How to Setup a Basic Vagrant VM | 10-Minute Tutorials: https://www.youtube.com/watch?v=AlRejC0lIGk
+
+Tero Karvinen, Run salt commands Locally: https://terokarvinen.com/2021/salt-run-command-locally/
+
+Tero Karvinen, Salt Vagrant - Automatically provision one master and two slaves: https://terokarvinen.com/2023/salt-vagrant/
+
+Tero Karvinen, Vagrant Revisited - Install and boot new virtual machine in 31 seconds: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/
