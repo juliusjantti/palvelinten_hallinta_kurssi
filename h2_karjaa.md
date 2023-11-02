@@ -32,6 +32,8 @@ x) "Cattle not pets" viittaa siihen että palvelimia on parempi kohdella karjana
 a) 
 Ladataan vagrant virallisilta Vagrantin [sivuilta](https://developer.hashicorp.com/vagrant/downloads) ja asennetaan oikea versio tietokoneelle. Minun tapauksessa Mac OS AMD64 arkkitehtuurille. Kokeillaan asennuksen jälkeen terminaalissa että onnistuiko asennus. Kokeillaan komentoa 'vagrant'. Komento otettu Vagrantin virallisilta [sivuilta](https://developer.hashicorp.com/vagrant/tutorials/getting-started/getting-started-install)
 
+Apuna asentamisessa vielä Youtubesta löydetty [video](https://www.youtube.com/watch?v=AlRejC0lIGk)
+
 ![Näyttökuva 2023-11-1 kello 16 18 32](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/4fd4e185-f7cf-4f73-a18f-d5412cbd9a23)
 Näyttäisi onnistuvan.
 
