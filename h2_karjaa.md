@@ -115,6 +115,8 @@ Ajetaan shell-komento orjalla verkon yli kuten [tämän](https://terokarvinen.co
 h)
 ???
 
+En ymmärrä mitä tehtävässä pitää tehdä.
+
 ## LÄHTEET
 Download Vagrant: https://developer.hashicorp.com/vagrant/downloads
 
