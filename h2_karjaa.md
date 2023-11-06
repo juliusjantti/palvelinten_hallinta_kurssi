@@ -114,8 +114,16 @@ Ajetaan shell-komento orjalla verkon yli kuten [tämän](https://terokarvinen.co
 
 h)
 ???
+En ihan ymmärtänyt tehtävää alunperin, mutta tutkittuani muita vastauksia sain edes jotain aikaan. 
 
-En ymmärrä mitä tehtävässä pitää tehdä.
+Ensimmäiseksi luodaan uusi hakemisto komennolla '$ sudo mkdir -p /srv/salt/hello' sekä sinne tiedosto komennolla '$ sudoedit /srv/salt/hello/init.sls' Ohjeet suoraan teron [sivuilta](https://terokarvinen.com/2023/salt-vagrant/)
+
+Lisätään tiedostoon komennot '/tmp/infra-as-code:
+  file.managed' ja ajetaan komento '$ sudo salt '*' state.apply hello'
+
+  <img width="563" alt="Näyttökuva 2023-11-6 kello 9 09 35" src="https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/88660362-6249-4490-abd7-edd6b491d084">
+
+Komennolla luotiin tiedosto /tmp/infra-as-a-code? Jotain tapahtui mutta en ole varma mitä?
 
 ## LÄHTEET
 Download Vagrant: https://developer.hashicorp.com/vagrant/downloads
@@ -131,3 +139,5 @@ Tero Karvinen, Run salt commands Locally: https://terokarvinen.com/2021/salt-run
 Tero Karvinen, Salt Vagrant - Automatically provision one master and two slaves: https://terokarvinen.com/2023/salt-vagrant/
 
 Tero Karvinen, Vagrant Revisited - Install and boot new virtual machine in 31 seconds: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/
+
+Hautadata, H2-karjaa.md: https://github.com/hautadata/palvelintenhallinta-jh/blob/main/H2-karjaa.md
