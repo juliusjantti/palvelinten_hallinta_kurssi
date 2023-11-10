@@ -87,6 +87,39 @@ Commit messageissa lukee molemmissa englanniksi käskymuodossa mitä kussakin mu
 
 Jokaisen ohjeen kohdalla on seurattu tehtvänannon mukana tulevia [vinkkejä](https://terokarvinen.com/2023/configuration-management-2023-autumn/).
 
+***
+
+g)
+Kokeillaan GITtiä toisella käyttöjärjestelmällä. Minun tilanseessa Mac Os:sällä. 
+
+Tässä vaiheessa käytetään apuna Youtubesta löytynyttä tutorial [videota.](https://www.youtube.com/watch?v=hMEyBtsuAJE)
+
+Aloitetaan avaamalla Terminal ja asentamalla git komennolla 'brew install git' ja kokeillaan että se toimii komennolla 'git'.
+
+![Näyttökuva 2023-11-10 kello 14 32 33](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/bf7b9248-cdd1-4c19-9d8d-06a8be5281e8)
+
+Luodaan uusi hakemisto komennolla 'mkdir' ja annetaan sen nimeksi Git, ja siirrytään kyseiseen hakemistoon komennolla 'cd Git'. 
+
+Jossain vaiheessa täytyi ilmoittaa oma nimi ja sähköposti komennoilla 'git config --global user.name/user.email' mutta ne unohtui hieman matkasta raporttia kirjoittaessa.
+
+Kloonataan aiemmin käytetty "WinterPonderland" varasto myös tässäkin tehtävässä, joten luodaan SSH avainpari samalla tavalla kuin aikasemmassa tehtävässä komennolla 'ssh-keygen' ja käydään lisäämässä se oman GitHub käyttäjän avaimiin. Ja lopuksi ajetaan komento 'git clone "ssh linkki'".
+
+Sitten siirrytään kyseiseen varastoon ja luodaan sinne uusi testitiedosto nimeltään "maccitesti.txt". Lisätään se gittiin komennolla 'git add .'
+
+![Näyttökuva 2023-11-10 kello 15 02 49](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/5f339b64-d580-4834-a803-40de4ca1cc29)
+
+Tämänjälkeen perinteiset 'git commit -m "commit viesti"', 'git pull' ja 'git push'.
+
+![Näyttökuva 2023-11-10 kello 15 04 08](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/6abfa407-7e0b-4817-95b7-67cd292c5827)
+
+Ja lopuksi nähdään miten tiedosto on ilmestynyt webiselaimeen.
+
+![Näyttökuva 2023-11-10 kello 15 05 21](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/c772510f-0673-427e-89f6-4f519b2e29aa)
+
+
+
+
+
 
 
 ***
@@ -96,3 +129,5 @@ Jokaisen ohjeen kohdalla on seurattu tehtvänannon mukana tulevia [vinkkejä](ht
 An insightful techie, Git Commands - Beginners hands on git status git clone git commit git push git log git add and more: https://www.youtube.com/watch?v=Uz_mTOQL9Tw
 
 Tero Karvinen, kohta h3 Versio, Vinkkejä: https://terokarvinen.com/2023/configuration-management-2023-autumn/
+
+Code with Arjun, Install Git on MacOS (Macbook M1, M1 Max, M1 Pro, M2) and push project into Github | Homebrew: https://www.youtube.com/watch?v=hMEyBtsuAJE
