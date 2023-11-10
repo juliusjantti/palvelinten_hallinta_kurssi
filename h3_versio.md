@@ -92,6 +92,8 @@ Jokaisen ohjeen kohdalla on seurattu tehtvänannon mukana tulevia [vinkkejä](ht
 g)
 Kokeillaan GITtiä toisella käyttöjärjestelmällä. Minun tilanseessa Mac Os:sällä. 
 
+Asensin Gitin käyttämällä Homebrew:tä. Sen asentamiseen ohjeet, sekä tietoa siitä löytyy [täältä](https://brew.sh/).
+
 Tässä vaiheessa käytetään apuna Youtubesta löytynyttä tutorial [videota.](https://www.youtube.com/watch?v=hMEyBtsuAJE)
 
 Aloitetaan avaamalla Terminal ja asentamalla git komennolla 'brew install git' ja kokeillaan että se toimii komennolla 'git'.
