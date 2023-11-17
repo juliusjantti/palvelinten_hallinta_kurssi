@@ -28,7 +28,9 @@ x) Vastaukset
 
 a) vastaus
 
-Ensiksi luodaan /srv/salt tiedostoon uusi hakemisto komennolla 'mkdir hello' ja lisätään sinne tiedosto komennolla 'sudoedit init.sls'. Lisätään tiedostoon oheinen teksti:
+Käytetään apuna Tero Karvisen artikkelia [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file), sekä myös omaan päähän jääneitä viime oppitunnin asioita.
+
+Ensiksi siirrytään /srv/salt hakemistoon ja luodaan uusi hakemisto komennolla 'mkdir hello' ja lisätään sinne uusi tiedosto komennolla 'sudoedit init.sls'. Lisätään tiedostoon oheinen teksti:
 
 ![Näyttökuva 2023-11-17 kello 16 23 51](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/91de4898-0c6c-40de-b99d-801f0b903811)
 
@@ -44,4 +46,16 @@ Näyttäisi toimivan.
 
 (ps kirjoitin tämän kohdan jo kerran mutta onnistuin poistamaan koko tehtävän joten tämä uudelleenkirjoitus on hieman karkeampi.)
 
+***
 
+## b) Top. Tee top.sls niin, että tilat ajetaan automaattisesti, esim komennolla "sudo salt '*' state.apply".
+
+b) vastaus
+
+
+
+# Lähteet
+
+Tero Karvinen 2023: [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file)
+
+Tero Karvinen 2018: [Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port](https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh)
