@@ -114,14 +114,27 @@ Apache2 tuli asennettua molemmalle orjalle ja tekstisivu tuli korvattua.
 
 Aloitetaan seuraamalla ohjeita Tero Karvisen [artikkelista](https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh)
 
-Luodaan /srv/salt hakemistoon sshd.sls tiedosto ja kopioidaan sinne tilakomennot Teron sivulta. Tarkistetaan myös että sisennykset ovat oikein, kaksi tai neljä tai kuusi välilyöntiä.
+Ohjeessa suositeltiin käyttämään virtuaalikonetta jota Vagrant ei ohjaa, joten kirjaudutaan kurssin alussa luotuun Debian 12 virtuaalikoneen sisään. Ensimmäiseksi ajetaan päivitykset 'sudo apt-get update/upgrade' komennoilla. 
 
-![Näyttökuva 2023-11-19 kello 10 55 59](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/44dbbc41-d847-4bb0-8f3e-628ecbcd6417)
+Luodaan /srv/salt hakemistoon tiedosto sshd.sls ja lisätään sinne teksti Teron sivulta.
 
+![Näyttökuva 2023-11-19 kello 11 25 40](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/2bd1b6c0-7704-494f-87ab-88020e455003)
 
+Sitten konfiguroidaan sshd_config tiedostoa. Etsitään se /etc/ssh hakemisosta ja käydään muuttamassa sieltä porttinumeroa. 
 
+![Näyttökuva 2023-11-19 kello 11 25 40](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/452c8eb1-69cd-4211-a5c7-54269209b77c)
 
+Tarkistetaan vielä sshd.servicen tila komennolla 'sudo systemctl status sshd.service'
 
+![Näyttökuva 2023-11-19 kello 11 36 17](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/51e0018d-9f36-42a4-9689-c48d7286d59c)
+
+lopuksi testi
+
+![Näyttökuva 2023-11-19 kello 11 38 58](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/aef7ea46-84f3-41fd-8e96-ae8862379118)
+
+Tässä tehtävässä käytin apuna käyttäjän "hautadata" [raporttia](https://github.com/hautadata/palvelintenhallinta-jh/blob/main/h4-demonit.md).
+
+Kokeilin useaa eri tapaa suorittaa tehtävää mutta en oikein päässyt edistymään. En ihan täysin ymmärrä mitä tehtävässä yritetään tehdä. Joten jätän tämän nyt tähän.
 
 
 
