@@ -134,7 +134,7 @@ lopuksi testi
 
 Tässä tehtävässä käytin apuna käyttäjän "hautadata" [raporttia](https://github.com/hautadata/palvelintenhallinta-jh/blob/main/h4-demonit.md).
 
-Kokeilin useaa eri tapaa suorittaa tehtävää mutta en oikein päässyt edistymään. En ihan täysin ymmärrä mitä tehtävässä yritetään tehdä. Joten jätän tämän nyt tähän.
+Kokeilin useaa eri tapaa suorittaa tehtävää mutta en oikein päässyt edistymään. En ihan täysin ymmärrä mitä tehtävässä yritetään tehdä. Joten jätän tämän nyt tähän. Täytyy yrittää työstää tätä vielä myöhemmin jos jää aikaa.
 
 
 
