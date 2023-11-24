@@ -103,10 +103,48 @@ Ainakin tila saatiin ajettua orjille. Kokeillaan sitten lopuksi ilmestyikö tied
 
 Kaikki näyttäisi toimivan!
 
+## d) Apassi. Tee Salt-tila, joka asentaa Apachen näyttämään kotihakemistoja.
+
+d) Vastaus
+
+***
+
+## e) Ämpärillinen. Tee Salt-tila, joka asentaa järjestelmään kansiollisen komentoja.
+
+e) Vastaus
+
+Aloitetaan tekemällä /srv/salt kansioon uusi hakemisto komennolla 'mkdir ämpäri', ja siirrytään kyseiseen hakemistoon. Sitten luodaan sinne useampi eri tiedosto, joista jokainen tulee toimimaan omana komentonaan. Alhaalla valmiit kolme komentoa/scriptiä.
+
+![Näyttökuva 2023-11-24 kello 15 00 50](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/15012897-8a74-4615-bae2-1bfc5f71c15d)
+
+Sitten siirrytään luomaan itse init.sls tiedostoa. Sen sisältö on seuraavanlainen:
+
+![Näyttökuva 2023-11-24 kello 15 08 07](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/558b3d4c-d1a7-42aa-93a7-0bcdf9693b26)
+
+Kokeillaan sitten ajaa kyseinen tila. Joka näyttäisi toimivan. 
+
+![Näyttökuva 2023-11-24 kello 15 09 53](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/d1a85a23-6a40-433b-a07d-238763decf92)
+
+Ja komennot löytyvät /usr/local/bin hakemistosta.
+
+![Näyttökuva 2023-11-24 kello 15 11 20](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/65f5d4df-3dea-4ef0-8d2a-87d6ada2f09a)
+
+Otetaan yhteys Orja1 koneeseen ja kokeillaan ajaa komentoja.
+
+![Näyttökuva 2023-11-24 kello 15 12 43](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/865400a5-6da8-4940-976f-f267cb3a0cd5)
+
+Komennot toimivat. En tiedä oliko tämä nyt oikea tapa luoda useampi komento samaan aikaan mutta ainakin tämä näytti toimivan.
+
+
+
 
 
 ***
 
 # Lähteet
 
-- 
+Tero Karvinen, 2018, [Apache User Homepages Automatically – Salt Package-File-Service Example](https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/)
+
+Tero Karvinen, 2023, [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file)
+
+ 
