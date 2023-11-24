@@ -85,8 +85,23 @@ Sitten luodaan tiedosto "tervehdys" joka sisältää itse scriptin josta haluamm
 
 ![Näyttökuva 2023-11-24 kello 12 56 19](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/30ad2e21-2469-4b6e-9fe7-086719755d4e)
 
+Sitten kokeillaan toimiiko tilan ajaminen. Ajetaan komento 'sudo salt '*' state.apply tervehdys'
 
+![Näyttökuva 2023-11-24 kello 13 17 29](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/2a4a1eba-7c6e-46d9-b9d3-860198affc6e)
 
+Ensimmäisellä kerralla ei toiminut. Mutta sitten huomasin että init.sls tiedostossa puuttui "mode" sanan perästä kaksoispiste. 
+
+![Näyttökuva 2023-11-24 kello 13 18 40](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/e0a61aea-a6e0-4428-9a85-e042b46625ed)
+
+Korjataan virhe ja kokeillaan uudestaan.
+
+![Näyttökuva 2023-11-24 kello 13 18 24](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/ceecf142-e0ce-4fec-8a53-dfac5d779353)
+
+Ainakin tila saatiin ajettua orjille. Kokeillaan sitten lopuksi ilmestyikö tiedosto orjakoneella haluttuun kansioon komennolla 'sudo salt 'orja1' cmd.run 'ls /usr/local/bin'. Ja sitten ajetaan vielä tämä juuri luotu komento orjalla. 
+
+![Näyttökuva 2023-11-24 kello 13 26 20](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/28d3f8f4-cf7e-4445-9f1e-b069cc075681)
+
+Kaikki näyttäisi toimivan!
 
 
 
