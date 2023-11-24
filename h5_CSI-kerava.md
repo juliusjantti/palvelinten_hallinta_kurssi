@@ -53,6 +53,10 @@ Sitten avataan Terminaali, siirrytään /Documents hakemistoon ja ajetaan koment
 
 ## c) Komennus. Tee Salt-tila, joka asentaa järjestelmään uuden komennon.
 
+Mallina viime oppitunnilta napattu kuvankaappaus teron demosta. 
+
+<img width="563" alt="esim2" src="https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/e73eb9c4-334f-4934-ae50-547795199221">
+
 
 Aloitetaan ensin tekemällä käsin shell-scripti kotihakemistoon. Tehdään nanolla uusi tiedosto nimeltä "hei" ja lisätään sinne seuraavat komennot.
 
@@ -103,9 +107,31 @@ Ainakin tila saatiin ajettua orjille. Kokeillaan sitten lopuksi ilmestyikö tied
 
 Kaikki näyttäisi toimivan!
 
+***
+
 ## d) Apassi. Tee Salt-tila, joka asentaa Apachen näyttämään kotihakemistoja.
 
 d) Vastaus
+
+En ole aivan täysin kartalla mitä tässä pitäisi tehädä mutta kokeillaan seuraamalla ohjeita Teron [sivuilta](https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/)
+
+Aloitetaan luomalla /srv/salt hakemistoon uusi "apache" niminen hakemisto, ja sinne sisään init.sls-tiedosto. Kopioidaan init.sls tiedostoon ohjeiden mukaiset konfiguraatiot. Lisätään hakemistoon myös "default-index.html" joka on tiedosto joka tulee olemaan kotisivuna.
+
+![Näyttökuva 2023-11-24 kello 15 24 28](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/833f977a-027f-4ab6-aef0-68aae07613d2)
+
+Sitten ajetaan komento 'sudo salt '*' state.apply apache'. Jotain näytti ainaskin tapahtuvan, mutta vastaus oli senverran pitkä että sitä ei saanut mahdutettua näyttökuvaan.
+
+![Näyttökuva 2023-11-24 kello 15 28 08](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/8a948a2a-548b-4eca-bba5-e40e85774d15)
+
+Kokeillaan vielä ohjeissa olevaa testiä.
+
+![Näyttökuva 2023-11-24 kello 15 32 53](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/3922f1e8-956d-469a-a8d5-1c1e1a112632)
+
+Näyttäisi toimivan niin kuin ohjeessakin.
+Tässä tehtävässä en täysin ymmärtänyt mitä tein, vaan ennemminkin seurasin vain sokesti ohjeita. Mutta jotain taisin saada kuitenkin aikaiseksi.
+
+
+
 
 ***
 
