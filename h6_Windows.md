@@ -133,8 +133,36 @@ Kokeillaan vielä bonuksena ajaa init.sls tiedosto. Alla tulos.
 
 ***
 
+
+## e) Kokeile jotain itsellesi uutta toimintoa Saltista Windowsilla.
+
+e) Vastaus
+
+Kokeillaan asentaa jokin ohjelma. Seurataan Johan Lindellin nettisivulta löytynyttä [esimerkkivastausta](https://johanlindell.fi/palvelintenhallinta).Kohta "windows".
+
+Ajetaan alla olevat komennot.
+
+![Näyttökuva 2023-11-30 kello 21 15 40](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/bf4c151c-3c6f-42af-bf02-5ae55b008c23)
+
+Ja sitten kokeillaan vaikka vscoden asennusta komennolla 'sudo salt 'ikkuna' pkg.install vscode'
+
+![Näyttökuva 2023-11-30 kello 21 16 44](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/7055b380-61bc-4047-bc3f-80f9b3bef342)
+
+Asennus näytti onnistuvan. Tarkistetaan vielä graafisella käyttöliittymällä.
+
+![Näyttökuva 2023-11-30 kello 21 17 12](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/cb58be18-7fd2-4ecc-b2f9-5dfdd1028bcc)
+
+Jes.
+
+
 # Lähteet
 
-Salt versions: https://archive.repo.saltproject.io/windows/
+Salt versions: [Salt](https://archive.repo.saltproject.io/windows/)
 
 Tero Karvinen, 2018, [Control Windows with Salt](https://terokarvinen.com/2018/04/18/control-windows-with-salt/)
+
+Tero Karvinen, 2023, [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/)
+
+Halonen, Rajala ja Ollikainen 2023 [Installing Windows 10 on a virtual machine](https://github.com/therealhalonen/PhishSticks/blob/master/notes/ollikainen/windows.md)
+
+Johan Lindell, 2021, [Palvelinten hallinta](https://johanlindell.fi/palvelintenhallinta)
