@@ -107,7 +107,8 @@ ja vaikka vielä cpu_model. Näyttää kaikissa samaa varmaankin koska ne ovat v
 
 ja vielä bonuksena saltpath. Eli varmaankin missä salt sijaitsee?
 
-![Näyttökuva 2023-11-30 kello 18 14 25](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/5b14c8d4-e3bd-40fb-936c-27bd012e5288)
+![Näyttökuva 2023-11-30 kello 18 17 19](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/5028e9aa-8bf8-4705-9563-fce195775dcd)
+
 
 
 ***
