@@ -65,8 +65,32 @@ Hyväksytään avaimet. Nyt meillä pitäisi olla kolmas orja. Minun tapauksessa
 
 Jahas ei näytä toimivan.
 
+Ensimmäinen ajatus on että Saltin versiot eri virtuaalikoneilla ovat erilaiset. Linuxilla on versio 3002.6 ja windowsilla 3006.4. Joten poistetaan salt windowsilta ja yritetään ladata vanhempi versio. 
 
-![Näyttökuva 2023-11-30 kello 17 27 04](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/284f392d-df59-47ff-8b85-14f67fbab57c)
+Tero Karvisen ohjeiden avulla löysin vanhemman version Saltista [täältä](https://archive.repo.saltproject.io/windows/)
 
-Ajaessa 'salt-call --local' komentoa myös outoja vastauksia.
+Joten ladataan versio 3002.6 aiempien ohjeiden avulla, ja hyväksytään avaimet. Sitten kokeilleen 'test.ping' komentoa uudestaan. 
 
+![Näyttökuva 2023-11-30 kello 17 52 15](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/13b6f2d8-3661-4ef9-92d2-20a62691636d)
+
+Kappas näyttäisi toimivan.
+
+'Salt-call --local' komento ei kuitenkaan tunnu toimivan.
+
+![Näyttökuva 2023-11-30 kello 18 01 57](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/701b5608-7b5b-40f9-8612-819b56561069)
+
+Mutta kun siirryin /salt hakemistoon komennolla 'cd /salt/' ja ajoin komennon sielä, se näyttäisi toimivan.
+
+![Näyttökuva 2023-11-30 kello 18 05 32](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/a8a5e55e-8f35-437a-bbea-130564f1dbf5)
+
+***
+
+
+
+***
+
+# Lähteet
+
+Salt versions: https://archive.repo.saltproject.io/windows/
+
+Tero Karvinen, 2018, [Control Windows with Salt](https://terokarvinen.com/2018/04/18/control-windows-with-salt/)
