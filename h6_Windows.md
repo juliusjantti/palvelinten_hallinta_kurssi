@@ -83,8 +83,27 @@ Mutta kun siirryin /salt hakemistoon komennolla 'cd /salt/' ja ajoin komennon si
 
 ![Näyttökuva 2023-11-30 kello 18 05 32](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/a8a5e55e-8f35-437a-bbea-130564f1dbf5)
 
+Ja vielä saltin versio komennolla 'salt-call -V'
+
+![Näyttökuva 2023-11-30 kello 18 08 11](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/08d40992-fcaa-447e-8148-b7614db06bb6)
+
 ***
 
+## c) Kerää Windows-koneesta tietoa grains.items -toiminnolla. Poimi 'grains.item' perään muutamia keskeisiä tietoja ja analysoi ne, eli selitä perusteellisesti mitä ne ovat. Kuvaile ja vertaile numeroita.
+
+c) vastaus
+
+Kokeillaan ensiksi klassinen komento jolla saadaan tietoon orjien käyttöjärjestelmä 'sudo salt '*' grains.item osfinger'
+
+![Näyttökuva 2023-11-30 kello 18 09 56](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/e4c9a5a9-ab3b-4cbc-8925-4cc11db8e6d1)
+
+sitten kokeillaan orjien id:
+
+![Näyttökuva 2023-11-30 kello 18 13 35](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/b0591bdc-2417-43b8-82a7-b173b674a04a)
+
+ja vaikka vielä cpu_model
+
+![Näyttökuva 2023-11-30 kello 18 14 25](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/62578c84-fb02-4e50-afe4-221c374423ba)
 
 
 ***
