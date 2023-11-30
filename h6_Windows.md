@@ -124,6 +124,12 @@ Kokeillaan komentoa 'sudo salt 'ikkuna' state.single file.managed 'C:\Users\jj\D
 
 Tiedosto ilmestyi työpöydälle
 
+Kokeillaan vielä bonuksena ajaa init.sls tiedosto. Alla tulos.
+
+![Näyttökuva 2023-11-30 kello 20 48 46](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/29f8c726-74f2-49ad-8ea1-e42449989690)
+
+![Näyttökuva 2023-11-30 kello 20 48 51](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/40ef7f5d-0628-41d0-92f2-b14609e38622)
+
 
 ***
 
