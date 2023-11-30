@@ -65,4 +65,9 @@ Hyväksytään avaimet. Nyt meillä pitäisi olla kolmas orja. Minun tapauksessa
 
 Jahas ei näytä toimivan.
 
+![Näyttökuva 2023-11-30 kello 16 47 44](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/99cadb7e-11c3-4629-b5d9-70efe602da21)
+
+![Näyttökuva 2023-11-30 kello 17 27 04](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/284f392d-df59-47ff-8b85-14f67fbab57c)
+
+Ajaessa 'salt-call --local' komentoa myös outoja vastauksia.
 
