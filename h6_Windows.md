@@ -101,9 +101,13 @@ sitten kokeillaan orjien id:
 
 ![Näyttökuva 2023-11-30 kello 18 13 35](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/b0591bdc-2417-43b8-82a7-b173b674a04a)
 
-ja vaikka vielä cpu_model
+ja vaikka vielä cpu_model. Näyttää kaikissa samaa varmaankin koska ne ovat virtuaalikoneita.
 
 ![Näyttökuva 2023-11-30 kello 18 14 25](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/62578c84-fb02-4e50-afe4-221c374423ba)
+
+ja vielä bonuksena saltpath. Eli varmaankin missä salt sijaitsee?
+
+![Näyttökuva 2023-11-30 kello 18 14 25](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/5b14c8d4-e3bd-40fb-936c-27bd012e5288)
 
 
 ***
