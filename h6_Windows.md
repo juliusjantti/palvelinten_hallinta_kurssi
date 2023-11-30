@@ -109,6 +109,20 @@ ja vielä bonuksena saltpath. Eli varmaankin missä salt sijaitsee?
 
 ![Näyttökuva 2023-11-30 kello 18 17 19](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/5028e9aa-8bf8-4705-9563-fce195775dcd)
 
+***
+
+## d) Kokeile Saltin file -toimintoa Windowsilla.
+
+d)Vastaus
+
+Kokeillaan komentoa 'sudo salt 'ikkuna' state.single file.managed 'C:\Users\jj\Desktop\testi.txt'' jolla luodaan tiedosto testi.txt windows koneen työpöydälle.
+
+![Näyttökuva 2023-11-30 kello 20 39 23](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/cf4683be-ceb2-415f-b4f3-5346e01f7b32)
+
+
+![Näyttökuva 2023-11-30 kello 20 40 17](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/ada50e56-8577-4567-a0b0-45ad1ab880fb)
+
+Tiedosto ilmestyi työpöydälle
 
 
 ***
