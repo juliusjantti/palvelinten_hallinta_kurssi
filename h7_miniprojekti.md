@@ -108,15 +108,31 @@ Kopioin lopulta /srv/salt hakemiston sisällön, Miniprojekti-hakemistoon komenn
 Lopulta tiedostot ovat githubissa.
 [Linkki repositoryyn](https://github.com/juliusjantti/Miniprojekti)
 
+***
+
+Testataan vielä kerran konfiguraation toimivuutta uusilla virtuaalikoneilla. Ajetaan 'vagrant destroy' ja 'vagrant up' komennot
+
+Kirjaudutaan sisään uuteen herra-koneeseen ja ladataan ensiksi Git komennolla 'sudo apt-get install git'. Tämän jälkeen ladataan "Miniprojekti" repon tiedostot komennolla 'git clone (repon ssh linkki)'
 
 
+![Näyttökuva 2023-12-8 kello 14 41 53](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/27ceea16-dd22-4da3-a92a-f08395c93abb)
+
+Kopioidaan kyseinen /salt kansio /srv hakemistoon.
+
+![Näyttökuva 2023-12-8 kello 14 43 49](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/a9090e93-a419-4589-a5d4-d21c0b9acc96)
+
+Tämän jälkeen voidaan ajaa 'sudo salt '*' state.apply'.
 
 
+![Näyttökuva 2023-12-8 kello 14 46 59](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/5241387e-b2ec-4507-a1f2-42951bf39875)
 
+Komento näyttäisi toimivan.
 
+Otetaan vielä ssh yhteys "orja1" koneeseen ja tarkistetan toimiiko kaikki.
 
+![Näyttökuva 2023-12-8 kello 14 51 12](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/e7b692ef-4254-4dce-b5c8-daf753355c7b)
 
-
+Tässä hieman testailua. Apache näytäisi toimivan, curl ja tree komennot toimivat, joulupukki käyttäjä löytyy, sekä oma komento toimii.
 
 
 
@@ -127,5 +143,23 @@ Lopulta tiedostot ovat githubissa.
 Tero Karvinen, 2023, [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/)
 
 Tero Karvinen, 2018, [Apache User Homepages Automatically – Salt Package-File-Service Example](https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/)
+
+Tero Karvinen, 2023, [Infra as a code](https://terokarvinen.com/2023/configuration-management-2023-autumn/)
+
+Linuxzie, 2018, [How to list users in Linux](https://linuxize.com/post/how-to-list-users-in-linux/)
+
+Julius Jäntti, 2023, [Miniprojekti](https://github.com/juliusjantti/Miniprojekti/tree/main)
+
+Julius Jäntti, 2023, [h3_versio](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/blob/main/h3_versio.md)
+
+Julius Jäntti, 2023, [h5_CSI-kerava](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/blob/main/h5_CSI-kerava.md)
+
+Ask Cloud Architecture, 2023, [How to Download Files from Github: 4 Easy Methods](https://www.youtube.com/watch?v=eWiPHP0us_0)
+
+
+
+
+
+
 
 
