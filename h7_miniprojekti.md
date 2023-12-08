@@ -1,6 +1,6 @@
 # h7 Miniprojekti
 
-Miniprojektin tarkoituksena luoda konfiguraatio linux tietokoneelle.
+Miniprojektin tarkoituksena luoda konfiguraatio linux tietokoneelle. Käytössä on kolme linux/debian virtuaalikonetta. Yksi master ja kaksi minion konetta.
 
 Tavoitteena:
 - Asentaa apache sekä luoda käyttäjälle automaattisesti oma kotisivu
@@ -27,6 +27,8 @@ Asennetaan paketit komennoilla:
 
 Jokainen komento toimi joten en jokaisesta laita näyttökaappausta.
 
+
+
 ![Näyttökuva 2023-12-8 kello 12 13 48](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/366801b2-0780-463f-a408-bd8411c8f18c)
 
 Lisätään sitten uusi käyttäjä komennolla: sudo salt '*' state.single user.present masa
@@ -37,6 +39,51 @@ Luodaan masterilla oma shell-scripti ja siirretään se /usr/local/bin hakemisto
 
 ![Näyttökuva 2023-12-8 kello 12 21 28](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/eeaefd73-a2c0-4585-9f01-56fc50b50f18)
 
-Sitten tuhotaan vanhat virtuaalikoneet ja luodaan tilalle uudet "puhtaat" koneet. Käytetään komentoa 'vagrant destroy'.
+Sitten tuhotaan vanhat virtuaalikoneet ja luodaan tilalle uudet "puhtaat" koneet. Käytetään komentoa 'vagrant destroy'. Tämän jälkeen otetaan uudet virtuaalikoneet käyttöön seuraamalla Tero Karvisen [ohjetta](https://terokarvinen.com/2023/salt-vagrant/).
+
+***
+
+## Sitten ruvetaan automatisoimaan
+
+Luodaan ensiksi /srv hakemistoon uusi hakemisto nimeltään /salt, jonne ruvetaan keräämään moduuleta.
+
+Tehdään ensiksi /apache hakemisto jonne luodaan init.sls tiedosto. Kyseiseen tiedostoon lisätään komennot [Teron](https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/) ohjeita seuraten. 
+
+Kokeillaan ensiksi vain yhdelle virtuaalikoneelle toimiiko tila.
+
+![Näyttökuva 2023-12-8 kello 12 34 35](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/9f5f9de8-a1f1-4f17-94f0-bdbab9df4bcb)
+
+Toimii. Sitten siirrytään seuraavaan, eli muiden pakettien asennukseen.
+
+Luodaan /srv/salt hakemistoon uusi /ohjelmat kansio ja sinne taas init.sls tiedosto
+
+![Näyttökuva 2023-12-8 kello 12 39 17](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/c4595358-69b5-4461-b126-c69260fb6aec)
+
+kokeillaan jälleen kerran ajaa tila vain toiselle virtuaalikoneelle.
+
+![Näyttökuva 2023-12-8 kello 12 39 41](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/edf45d73-6a54-43b0-98a0-cad79bdffed9)
+
+Sitten siirrytään uuden käyttäjän luomiseen.
+
+Jälleen uusi moduli /salt/srv hakemistoon nimeltä /kayttaja, ja sinne init.sls tiedosto
+
+![Näyttökuva 2023-12-8 kello 12 49 57](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/b395f199-968f-432f-aa44-e467e8923c96)
+
+Ja testataan jälleen toimivuus
+
+![Näyttökuva 2023-12-8 kello 12 50 13](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/b363bb91-eace-4119-b6c2-e803b2f87451)
+
+
+
+
+
+
+
+
+
+# Lähteet
+
+Tero Karvinen, 2023, [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/)
+Tero Karvinen, 2018, [Apache User Homepages Automatically – Salt Package-File-Service Example](https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/)
 
 
