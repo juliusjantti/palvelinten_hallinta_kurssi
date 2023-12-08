@@ -95,6 +95,8 @@ Sitten vihdoin ajetaan komento 'sudo salt 'orja2' state.apply'
 
 Ja kaikki vaadittavat tilat näyttää olevan ajettu. 
 
+***
+
 Kokeillaan vielä lisätä konfiguraatiot git:tiin jotta ne voidaan tulevaisuudessa ladata sieltä.
 
 Seurasin kurssilla aiemmin tehdyn oman [tehtäväni ohjeita](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/blob/main/h3_versio.md).
