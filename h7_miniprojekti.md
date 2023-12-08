@@ -73,6 +73,45 @@ Ja testataan jälleen toimivuus
 
 ![Näyttökuva 2023-12-8 kello 12 50 13](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/b363bb91-eace-4119-b6c2-e803b2f87451)
 
+Ja viimeiseksi vielä oman komennon luominen. Tehdään /srv/salt/komento hakemisto ja sinne init.sls tiedosto sekä itse komento.
+
+![Näyttökuva 2023-12-8 kello 12 56 14](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/fa21c935-2206-4dff-ab27-f5e2497af89f)
+
+Ja jälleen kokeillaan:
+
+![Näyttökuva 2023-12-8 kello 13 00 00](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/ab6c5a1c-2a96-4794-85a2-be0fb659b39f)
+
+Tässä vaiheessa moduulit alkavat olla valmiina. 
+
+***
+
+Luodaan kuitenkin vielä top.sls tiedosto jotta saadaan kaikki ajettua yhdellä komennolla. Luodaan /srv/salt hakemistoon top.sls jonka sisältö on seuraava:
+
+![Näyttökuva 2023-12-8 kello 13 03 38](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/591a652f-ffcf-4847-a89a-be82d8ab931e)
+
+Sitten vihdoin ajetaan komento 'sudo salt 'orja2' state.apply'
+
+![Näyttökuva 2023-12-8 kello 13 06 34](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/8a912aa5-a96e-4962-8946-b0406aeb7124)
+
+Ja kaikki vaadittavat tilat näyttää olevan ajettu. 
+
+Kokeillaan vielä lisätä konfiguraatiot git:tiin jotta ne voidaan tulevaisuudessa ladata sieltä.
+
+Seurasin kurssilla aiemmin tehdyn oman [tehtäväni ohjeita](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/blob/main/h3_versio.md).
+
+Kopioin lopulta /srv/salt hakemiston sisällön, Miniprojekti-hakemistoon komennolla 'cp -r /srv/salt /home/vagrant/Miniprojekti'. Hakemisto "Miniprojekti" on Github sivuilla oleva repository. 
+
+![Näyttökuva 2023-12-8 kello 13 21 35](https://github.com/juliusjantti/palvelinten_hallinta_kurssi/assets/148885509/12710077-031b-4fb6-ba3b-877fa24f842b)
+
+Lopulta tiedostot ovat githubissa.
+[Linkki repositoryyn](https://github.com/juliusjantti/Miniprojekti)
+
+
+
+
+
+
+
 
 
 
@@ -84,6 +123,7 @@ Ja testataan jälleen toimivuus
 # Lähteet
 
 Tero Karvinen, 2023, [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/)
+
 Tero Karvinen, 2018, [Apache User Homepages Automatically – Salt Package-File-Service Example](https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/)
 
 
