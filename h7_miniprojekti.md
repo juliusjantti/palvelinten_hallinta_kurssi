@@ -4,7 +4,6 @@ Miniprojektin tarkoituksena luoda konfiguraatio linux tietokoneelle. Käytössä
 
 Tavoitteena:
 - Asentaa apache sekä luoda käyttäjälle automaattisesti oma kotisivu
-- Asentaa ssh 
 - Ladata muutama hyödyllinen komento
 - Lisätä uusi käyttäjä
 - Sekä lisätä yksi oma komento
@@ -14,8 +13,6 @@ Tavoitteena:
 Asennetaan paketit komennoilla:
 
 'sudo salt '*' state.single pkg.installed apache2'
-
-'sudo salt '*' state.single pkg.installed ssh'
 
 'sudo salt '*' state.single pkg.installed curl'
 
