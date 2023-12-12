@@ -1,9 +1,10 @@
 # h7 Miniprojekti
 
-Miniprojektin tarkoituksena luoda konfiguraatio linux tietokoneelle. Käytössä on kolme linux/debian virtuaalikonetta. Yksi master ja kaksi minion konetta.
+Miniprojektin tarkoituksena luoda konfiguraatio linux tietokoneelle. Käytössä on kolme linux/debian virtuaalikonetta. Yksi master ja kaksi minion konetta. Miniprojektin pohjana oleva konfiguraatio [tämän teron] ohjeen mukaan.
+
 
 Tavoitteena:
-- Asentaa apache sekä luoda käyttäjälle automaattisesti oma kotisivu
+- Asentaa apache sekä päivittää kotisivu
 - Ladata muutama hyödyllinen komento
 - Lisätä uusi käyttäjä
 - Sekä lisätä yksi oma komento
